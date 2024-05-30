@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0442A12C056ACA000D3EF5 /* CustomKeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0442A02C056ACA000D3EF5 /* CustomKeypadView.swift */; };
 		0D6308C52BDA3E9C00FAE088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6308C42BDA3E9C00FAE088 /* AppDelegate.swift */; };
 		0D6308C72BDA3E9C00FAE088 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6308C62BDA3E9C00FAE088 /* SceneDelegate.swift */; };
 		0D6308C92BDA3E9C00FAE088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6308C82BDA3E9C00FAE088 /* ViewController.swift */; };
@@ -17,11 +18,24 @@
 		0D6308DD2BDA40E900FAE088 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0D6308DC2BDA40E900FAE088 /* SnapKit */; };
 		0D6308DF2BDA40E900FAE088 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 0D6308DE2BDA40E900FAE088 /* SnapKit-Dynamic */; };
 		0D6308E42BDA4D0800FAE088 /* TransformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6308E32BDA4D0800FAE088 /* TransformViewController.swift */; };
+		0D6788B12C0460EA00A337FD /* TossTransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6788B02C0460EA00A337FD /* TossTransferViewController.swift */; };
+		0D6788B42C046AE100A337FD /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D6788B32C046AE100A337FD /* Pretendard-Medium.otf */; };
+		0D6788B62C046AF100A337FD /* Pretendard-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D6788B52C046AF100A337FD /* Pretendard-SemiBold.otf */; };
+		0D6788B82C046B1600A337FD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0D6788B72C046B1600A337FD /* Pretendard-Bold.otf */; };
+		0D6788BA2C04714400A337FD /* UIVIew+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6788B92C04714400A337FD /* UIVIew+.swift */; };
+		0D6788BC2C04715100A337FD /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6788BB2C04715100A337FD /* UIStackView+.swift */; };
+		0D6788BE2C04715F00A337FD /* IntFormat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6788BD2C04715F00A337FD /* IntFormat+.swift */; };
 		0D6F75F72BEBBDB400756855 /* UIPanGestureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6F75F62BEBBDB400756855 /* UIPanGestureViewController.swift */; };
+		0DB182062C006D83007F2AF7 /* BezierPathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB182052C006D83007F2AF7 /* BezierPathViewController.swift */; };
+		0DB182082C006F98007F2AF7 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB182072C006F98007F2AF7 /* ProgressView.swift */; };
+		0DCD52382BF73C63008E2891 /* CarouselViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD52372BF73C63008E2891 /* CarouselViewController.swift */; };
+		0DCD523C2BF73DF5008E2891 /* CarouselCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD523B2BF73DF5008E2891 /* CarouselCollectionViewCell.swift */; };
+		0DCD523F2BF73F70008E2891 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0DCD523E2BF73F70008E2891 /* Kingfisher */; };
 		0DD5B6EE2BEB743D00A05693 /* GestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD5B6ED2BEB743D00A05693 /* GestureRecognizerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0442A02C056ACA000D3EF5 /* CustomKeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeypadView.swift; sourceTree = "<group>"; };
 		0D6308C12BDA3E9C00FAE088 /* Animation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D6308C42BDA3E9C00FAE088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D6308C62BDA3E9C00FAE088 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +45,18 @@
 		0D6308D02BDA3E9D00FAE088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D6308D22BDA3E9D00FAE088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D6308E32BDA4D0800FAE088 /* TransformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformViewController.swift; sourceTree = "<group>"; };
+		0D6788B02C0460EA00A337FD /* TossTransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TossTransferViewController.swift; sourceTree = "<group>"; };
+		0D6788B32C046AE100A337FD /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		0D6788B52C046AF100A337FD /* Pretendard-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-SemiBold.otf"; sourceTree = "<group>"; };
+		0D6788B72C046B1600A337FD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		0D6788B92C04714400A337FD /* UIVIew+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+.swift"; sourceTree = "<group>"; };
+		0D6788BB2C04715100A337FD /* UIStackView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		0D6788BD2C04715F00A337FD /* IntFormat+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IntFormat+.swift"; sourceTree = "<group>"; };
 		0D6F75F62BEBBDB400756855 /* UIPanGestureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPanGestureViewController.swift; sourceTree = "<group>"; };
+		0DB182052C006D83007F2AF7 /* BezierPathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathViewController.swift; sourceTree = "<group>"; };
+		0DB182072C006F98007F2AF7 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		0DCD52372BF73C63008E2891 /* CarouselViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewController.swift; sourceTree = "<group>"; };
+		0DCD523B2BF73DF5008E2891 /* CarouselCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DD5B6ED2BEB743D00A05693 /* GestureRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DCD523F2BF73F70008E2891 /* Kingfisher in Frameworks */,
 				0D6308DA2BDA40E100FAE088 /* Then in Frameworks */,
 				0D6308DD2BDA40E900FAE088 /* SnapKit in Frameworks */,
 				0D6308DF2BDA40E900FAE088 /* SnapKit-Dynamic in Frameworks */,
@@ -68,6 +94,13 @@
 		0D6308C32BDA3E9C00FAE088 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				0D6788B92C04714400A337FD /* UIVIew+.swift */,
+				0D6788BD2C04715F00A337FD /* IntFormat+.swift */,
+				0D6788BB2C04715100A337FD /* UIStackView+.swift */,
+				0D6788B22C046AAA00A337FD /* fonts */,
+				0D6788AE2C0460C700A337FD /* 5주차 */,
+				0DB182042C006D6C007F2AF7 /* 4주차 */,
+				0DCD52342BF739B1008E2891 /* 3주차 */,
 				0DD5B6EC2BEB72CC00A05693 /* 2주차 */,
 				0D6308E02BDA4CB500FAE088 /* 1주차 */,
 				0D6308C42BDA3E9C00FAE088 /* AppDelegate.swift */,
@@ -88,6 +121,46 @@
 			);
 			name = "1주차";
 			path = "1주차";
+			sourceTree = "<group>";
+		};
+		0D6788AE2C0460C700A337FD /* 5주차 */ = {
+			isa = PBXGroup;
+			children = (
+				0D6788B02C0460EA00A337FD /* TossTransferViewController.swift */,
+				0D0442A02C056ACA000D3EF5 /* CustomKeypadView.swift */,
+			);
+			name = "5주차";
+			path = "5주차";
+			sourceTree = "<group>";
+		};
+		0D6788B22C046AAA00A337FD /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D6788B32C046AE100A337FD /* Pretendard-Medium.otf */,
+				0D6788B52C046AF100A337FD /* Pretendard-SemiBold.otf */,
+				0D6788B72C046B1600A337FD /* Pretendard-Bold.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0DB182042C006D6C007F2AF7 /* 4주차 */ = {
+			isa = PBXGroup;
+			children = (
+				0DB182052C006D83007F2AF7 /* BezierPathViewController.swift */,
+				0DB182072C006F98007F2AF7 /* ProgressView.swift */,
+			);
+			name = "4주차";
+			path = "4주차";
+			sourceTree = "<group>";
+		};
+		0DCD52342BF739B1008E2891 /* 3주차 */ = {
+			isa = PBXGroup;
+			children = (
+				0DCD52372BF73C63008E2891 /* CarouselViewController.swift */,
+				0DCD523B2BF73DF5008E2891 /* CarouselCollectionViewCell.swift */,
+			);
+			name = "3주차";
+			path = "3주차";
 			sourceTree = "<group>";
 		};
 		0DD5B6EC2BEB72CC00A05693 /* 2주차 */ = {
@@ -120,6 +193,7 @@
 				0D6308D92BDA40E100FAE088 /* Then */,
 				0D6308DC2BDA40E900FAE088 /* SnapKit */,
 				0D6308DE2BDA40E900FAE088 /* SnapKit-Dynamic */,
+				0DCD523E2BF73F70008E2891 /* Kingfisher */,
 			);
 			productName = Animation;
 			productReference = 0D6308C12BDA3E9C00FAE088 /* Animation.app */;
@@ -152,6 +226,7 @@
 			packageReferences = (
 				0D6308D82BDA40E100FAE088 /* XCRemoteSwiftPackageReference "Then" */,
 				0D6308DB2BDA40E900FAE088 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				0DCD523D2BF73F70008E2891 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0D6308C22BDA3E9C00FAE088 /* Products */;
 			projectDirPath = "";
@@ -168,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D6308D12BDA3E9D00FAE088 /* LaunchScreen.storyboard in Resources */,
+				0D6788B82C046B1600A337FD /* Pretendard-Bold.otf in Resources */,
 				0D6308CE2BDA3E9D00FAE088 /* Assets.xcassets in Resources */,
+				0D6788B62C046AF100A337FD /* Pretendard-SemiBold.otf in Resources */,
 				0D6308CC2BDA3E9C00FAE088 /* Main.storyboard in Resources */,
+				0D6788B42C046AE100A337FD /* Pretendard-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,12 +258,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0442A12C056ACA000D3EF5 /* CustomKeypadView.swift in Sources */,
+				0DCD523C2BF73DF5008E2891 /* CarouselCollectionViewCell.swift in Sources */,
 				0D6F75F72BEBBDB400756855 /* UIPanGestureViewController.swift in Sources */,
 				0D6308C92BDA3E9C00FAE088 /* ViewController.swift in Sources */,
 				0D6308C52BDA3E9C00FAE088 /* AppDelegate.swift in Sources */,
+				0D6788B12C0460EA00A337FD /* TossTransferViewController.swift in Sources */,
 				0DD5B6EE2BEB743D00A05693 /* GestureRecognizerViewController.swift in Sources */,
+				0DB182062C006D83007F2AF7 /* BezierPathViewController.swift in Sources */,
 				0D6308C72BDA3E9C00FAE088 /* SceneDelegate.swift in Sources */,
+				0D6788BA2C04714400A337FD /* UIVIew+.swift in Sources */,
+				0DB182082C006F98007F2AF7 /* ProgressView.swift in Sources */,
+				0D6788BC2C04715100A337FD /* UIStackView+.swift in Sources */,
 				0D6308E42BDA4D0800FAE088 /* TransformViewController.swift in Sources */,
+				0D6788BE2C04715F00A337FD /* IntFormat+.swift in Sources */,
+				0DCD52382BF73C63008E2891 /* CarouselViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +513,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		0DCD523D2BF73F70008E2891 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +538,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0D6308DB2BDA40E900FAE088 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = "SnapKit-Dynamic";
+		};
+		0DCD523E2BF73F70008E2891 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0DCD523D2BF73F70008E2891 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
