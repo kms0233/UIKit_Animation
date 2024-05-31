@@ -100,3 +100,4 @@ extension ViewController: UIScrollViewDelegate {
         stickyHeaderView.isHidden = !shouldShowSticky
     }
 }
+

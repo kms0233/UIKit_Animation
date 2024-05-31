@@ -73,7 +73,7 @@ class CustomKeypadView: UIView {
         case "⌫":
             onDeleteTapped?()
         default:
-            onNumberTapped?(title)
+            onNumberTapped?(title+"")
         }
     }
 }
