@@ -170,6 +170,41 @@ private extension TossTransferViewController {
         }
     }
     
+    
+    //부르르 텍스트
+    func shakeText() {
+        self.inputLabel.transform = CGAffineTransform(translationX: 10, y: 10)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0.5, options: [.curveEaseInOut]) {
+            self.inputLabel.transform = .identity
+        }
+    }
+    
+    @objc func inputLabelDidChange(_ textField: UITextField) {
+        if let text = textField.text, !text.isEmpty {
+            balanceButton.isHidden = true
+        } else {
+            balanceButton.isHidden = false
+        }
+    }
+    
+    @objc func inputLabelDidBeginEditing(_ textField: UITextField) {
+        balanceButton.isHidden = true
+    }
+}
+
+private extension TossTransferViewController {
+    //숫자 입력시 드롭되는 애니메이션
+    func insertNumberAnimation(_ numberView: UILabel) {
+        numberView.transform = CGAffineTransform(translationX: 0, y: -40)
+        numberView.isHidden = false
+        numberView.alpha = 0
+        
+        UIView.animate(withDuration: 0.3, delay: 0.0, options: .curveLinear, animations: {
+            numberView.transform = CGAffineTransform(translationX: 0, y: 0)
+            numberView.alpha = 1.0
+        }, completion: nil)
+    }
+    
     func updateInputLabel(with text: String) {
         let amount = Int(text.replacingOccurrences(of: ",", with: "").replacingOccurrences(of: "원", with: "")) ?? 0
         if amount > maxAmount {
@@ -182,24 +217,36 @@ private extension TossTransferViewController {
         }
         self.inputLabel.text = amount.formattedWithSeparator + "원"
         self.currentInputAmount = amount
+        
+        // 애니메이션 추가 부분
+        animateLastNumber()
     }
-
-    func shakeText() {
-        self.inputLabel.transform = CGAffineTransform(translationX: 0, y: 20)
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 1, options: [.curveEaseInOut]) {
-            self.inputLabel.transform = .identity
+    
+    func animateLastNumber() {
+        guard let text = inputLabel.text, let lastCharacter = text.filter({ $0.isNumber }).last else { return }
+        
+        // 마지막 숫자에 대한 레이블 생성
+        let label = UILabel()
+        label.text = String(lastCharacter)
+        label.font = inputLabel.font
+        label.textColor = inputLabel.textColor
+        label.textAlignment = .center
+        self.view.addSubview(label)
+        
+        // 레이블 위치 설정
+        label.snp.makeConstraints {
+            $0.centerY.equalTo(inputLabel.snp.centerY)
+            $0.leading.equalTo(inputLabel.snp.leading).offset(-5) // 텍스트 필드의 왼쪽에 위치하도록 설정하고 여유 공간을 줍니다.
+        }
+        
+     
+        UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+            label.transform = CGAffineTransform(translationX: 0, y: -40)
+            label.alpha = 0
+        }) { _ in
+            label.removeFromSuperview() // 애니메이션이 끝나면 레이블을 제거합니다.
         }
     }
 
-    @objc func inputLabelDidChange(_ textField: UITextField) {
-        if let text = textField.text, !text.isEmpty {
-            balanceButton.isHidden = true
-        } else {
-            balanceButton.isHidden = false
-        }
-    }
-
-    @objc func inputLabelDidBeginEditing(_ textField: UITextField) {
-        balanceButton.isHidden = true
-    }
+    
 }

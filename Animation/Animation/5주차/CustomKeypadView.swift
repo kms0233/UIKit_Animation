@@ -69,11 +69,38 @@ class CustomKeypadView: UIView {
     
     @objc private func buttonTapped(_ sender: UIButton) {
         guard let title = sender.currentTitle else { return }
+        
+        animateButtonTap(sender)
+        
         switch title {
         case "⌫":
             onDeleteTapped?()
         default:
-            onNumberTapped?(title+"")
+            onNumberTapped?(title)
+        }
+    }
+    
+    private func animateButtonTap(_ button: UIButton) {
+        UIView.animate(withDuration: 0.1, animations: {
+            button.backgroundColor = UIColor.lightGray3.withAlphaComponent(0.5)
+            button.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            button.layer.cornerRadius = 13
+        }) { _ in
+            UIView.animate(withDuration: 0.3, animations: {
+                button.backgroundColor = .none
+                button.transform = CGAffineTransform.identity
+            })
+        }
+        
+        if let titleLabel = button.titleLabel {
+            UIView.animate(withDuration: 0.1, animations: {
+                titleLabel.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+            }) { _ in
+                UIView.animate(withDuration: 0.3, animations: {
+                    titleLabel.transform = CGAffineTransform.identity
+                })
+            }
         }
     }
 }
+
